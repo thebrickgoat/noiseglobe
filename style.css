@@ -1,0 +1,18 @@
+/* CSS files add styling rules to your content */
+
+body{
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  color:white;
+  text-align:center;
+  background:url('https://cdn.glitch.com/578b052e-3049-4383-99b4-73395358240a%2Flarge.png?1544109492943');
+  background-size:cover;
+}
+h1 {
+  font-style: italic;
+  color: #c18;
+} 
+
+#defaultCanvas0 {
+ width:80%!important;
+ height:auto!important;
+}

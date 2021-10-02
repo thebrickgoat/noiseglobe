@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Noise Globe</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
+
+    <script src="/script.js" defer></script>
+    
+  </head>
+  <body>
+    <h1>Shhhhhh.</h1>
+  
+    <p>
+      The world is making too much noise. People are trying to sleep.
+    </p>
+
+        <!-- firebase nosense -->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCSge61Ne769HhqEF3fyB5CJEM80Fek9Gs",
+    authDomain: "noise-globe.firebaseapp.com",
+    databaseURL: "https://noise-globe.firebaseio.com",
+    projectId: "noise-globe",
+    storageBucket: "noise-globe.appspot.com",
+    messagingSenderId: "426935063919"
+  };
+  firebase.initializeApp(config);
+</script>
+  </body>
+</html>
