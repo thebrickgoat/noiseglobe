@@ -15,4 +15,5 @@ h1 {
 #defaultCanvas0 {
  width:80%!important;
  height:auto!important;
+ max-width: 1500px;
 }

@@ -1,3 +1,22 @@
+const config = {
+
+  apiKey: "AIzaSyCSge61Ne769HhqEF3fyB5CJEM80Fek9Gs",
+
+  authDomain: "noise-globe.firebaseapp.com",
+
+  databaseURL: "https://noise-globe.firebaseio.com",
+
+  projectId: "noise-globe",
+
+  storageBucket: "noise-globe.appspot.com",
+
+  messagingSenderId: "426935063919",
+
+  appId: "1:426935063919:web:e9e3226ae6f42560f5049a"
+
+};
+firebase.initializeApp(config);
+
 // show a globe and bars that show sound levels of users currently on site synced with server!!!
 
 //daddy vars
@@ -134,9 +153,8 @@ function draw(){
   
     //local volume box
     // check if localPos is set and mic enabled
-    if(localPos === 0){
-      console.log('nullsmacked')
-    } else{
+    if(localPos != 0){
+
       db.ref('users/' + uid + '/').update({
         vol: localVolume
        });
